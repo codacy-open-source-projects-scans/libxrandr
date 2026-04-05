@@ -163,7 +163,7 @@ XRRConfigureProviderProperty (Display *dpy, RRProvider provider, Atom property,
     UnlockDisplay(dpy);
     SyncHandle();
 }
-			
+
 void
 XRRChangeProviderProperty (Display *dpy, RRProvider provider,
 			 Atom property, Atom type,
@@ -248,7 +248,7 @@ XRRDeleteProviderProperty (Display *dpy, RRProvider provider, Atom property)
 int
 XRRGetProviderProperty (Display *dpy, RRProvider provider,
 		      Atom property, long offset, long length,
-		      Bool delete, Bool pending, Atom req_type, 
+		      Bool delete, Bool pending, Atom req_type,
 		      Atom *actual_type, int *actual_format,
 		      unsigned long *nitems, unsigned long *bytes_after,
 		      unsigned char **prop)

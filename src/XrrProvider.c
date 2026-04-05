@@ -52,7 +52,7 @@ XRRGetProviderResources(Display *dpy, Window window)
     req->reqType = info->codes->major_opcode;
     req->randrReqType = X_RRGetProviders;
     req->window = window;
-    
+
     if (!_XReply (dpy, (xReply *) &rep, 0, xFalse))
     {
       UnlockDisplay (dpy);

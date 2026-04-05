@@ -510,7 +510,7 @@ typedef struct _XRRProviderInfo {
     unsigned int *associated_capability;
     int		    nameLen;
 } XRRProviderInfo;
-  
+
 XRRProviderInfo *
 XRRGetProviderInfo(Display *dpy, XRRScreenResources *resources, RRProvider provider);
 
@@ -533,7 +533,7 @@ void
 XRRConfigureProviderProperty (Display *dpy, RRProvider provider, Atom property,
 			    Bool pending, Bool range, int num_values,
 			    long *values);
-			
+
 void
 XRRChangeProviderProperty (Display *dpy, RRProvider provider,
 			 Atom property, Atom type,
